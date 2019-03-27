@@ -18,6 +18,6 @@ You can download all file in the "Elephant Restaurant" and run the "main.cpp";
 
 2.>>StringTool
 
-Comman tool class about String;
+Common tool class about String;
 
 Download "StringTool" files and reference "String.h";
