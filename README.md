@@ -14,7 +14,7 @@ Below I will simplify introduce the comment for these directory;
 
 A Restaurant demo,simulate restaurant customers order;
 
-You can download the all file in the "Elephant Restaurant" and run the "main.cpp";
+You can download all file in the "Elephant Restaurant" and run the "main.cpp";
 
 2.>>StringTool
 
