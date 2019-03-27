@@ -8,7 +8,7 @@ This repository is my pratice after  a period of time for learning C++;
 Every directory is a pratice or some tools by coding with C++;
 
 -----------------------------------------------------------------------------
-Below I will simplify introduce the comment for these directory;
+Below I will simply introduce the comment for these directory;
 
 1.>>Elephant Restaurant
 
