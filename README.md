@@ -20,4 +20,4 @@ You can download all file in the "Elephant Restaurant" and run the "main.cpp";
 
 Common tool class about String;
 
-Download "StringTool" files and reference "String.h";
+Download "StringTool" files and load "String.h";
