@@ -5,14 +5,14 @@ A tool class used to simplify string operate.
 Date code : 2019/3/26.
 author : React.
 */
-class String
+class __declspec(dllexport) String
 {
 public:
 	//constractors
 	String();
 	String(const int);
 	String(const char*);
-	String(const String&);
+	String(String&);
 	~String();
 public:
 	//Used for output.
@@ -25,6 +25,8 @@ public:
 	bool operator==(const String&);
 	bool operator!=(const char*);
 	bool operator!=(const String&);
+	String operator+(String&);
+	String operator+(char*);
 public:
 	char* getString();
 	int getLength();
@@ -35,8 +37,9 @@ private:
 };
 
 //operator overloading
-std::ostream& operator<<(std::ostream &,String &);
-void operator>>(std::istream &,String &);
+__declspec(dllexport) std::ostream& operator<<(std::ostream &,String&);
+__declspec(dllexport) void operator>>(std::istream&,String&);
+__declspec(dllexport) String operator+(char*,String&);
 
 
 

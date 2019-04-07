@@ -27,17 +27,24 @@ String::String(const char* string)
 		strcpy_s(this->string,length+1,"");
 		return;
 	}
-	length = strlen(string)+1;
-	this->string = new char[length];
-	strcpy_s(this->string,length,string);
+	length = strlen(string);
+	this->string = new char[length+1];
+	strcpy_s(this->string,length+1,string);
 
 }
 
-String::String(const String &string)
+String::String(String &string)
 {
+	if (string == NULL)
+	{
+		length = 0;
+		this->string = new char[length+1];
+		strcpy_s(this->string,length+1,"");
+		return;
+	}
 	this->length = string.length;
-	this->string = new char[this->length];
-	strcpy_s(this->string,length,string.string);
+	this->string = new char[this->length + 1];
+	strcpy_s(this->string,length + 1,string.string);
 
 }
 
@@ -65,17 +72,17 @@ void String::operator=(const char* str)
 		return;
 	}
 	delete[] string;
-	length = strlen(str) + 1;
-	string = new char[length];
-	strcpy_s(string,length,str);
+	length = strlen(str);
+	string = new char[length+1];
+	strcpy_s(string,length+1,str);
 }
 
 void String::operator=(const String &str)
 {
 	delete[] string;
 	length = str.length;
-	string = new char[length];
-	strcpy_s(string,length,str.string);
+	string = new char[length+1];
+	strcpy_s(string,length+1,str.string);
 }
 
 char* String::getString()
@@ -143,6 +150,36 @@ bool String::operator!=(const String& str)
 	return !(*this == str);
 }
 
+String String::operator+(String &str)
+{
+	char* c = new char[length + str.length + 10];
+
+	strcpy_s(c,length+1,string);
+	strcat_s(c,length + str.length + 10,str.string);
+
+	String s = c;
+
+	delete[] c;
+	c = NULL;
+	return s;
+}
+
+String String::operator+(char* str)
+{
+	char* c = new char[length + strlen(str) + 10];
+
+	strcpy_s(c,length+1,string);
+	strcat_s(c,length + strlen(str) + 10,str);
+
+	String s = c;
+
+	delete[] c;
+	c = NULL;
+	return s;
+}
+
+//---------------------------------------------------------------
+
 std::ostream& operator<<(std::ostream &out,String &s)
 {
 	out << s.getString();
@@ -152,6 +189,20 @@ std::ostream& operator<<(std::ostream &out,String &s)
 void operator>>(std::istream &in,String &s)
 {
 	in>>s.getString();
+}
+
+String operator+(char* str1,String& str2)
+{
+	char* c = new char[strlen(str1)+str2.getLength()+10];
+	memset(c,0,strlen(str1)+str2.getLength()+10);
+	strcpy_s(c,strlen(str1)+1,str1);
+	
+	strcat_s(c,strlen(str1)+str2.getLength()+10,str2.getString());
+	String s = c;
+
+	delete[] c;
+	c = NULL;
+	return s;
 }
 
 
