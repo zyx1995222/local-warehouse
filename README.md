@@ -16,8 +16,8 @@ A Restaurant demo,simulate restaurant customers order;
 
 You can download all file in the "Elephant Restaurant" and run the "main.cpp";
 
-2.>>StringTool
+2.>>Tools
 
-Common tool class about String;
+Common tools contain both String and Map<String,String> tool.
 
-Download "StringTool" files and load "String.h";
+Download "Tools" files and load relate head files;
