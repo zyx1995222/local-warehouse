@@ -2,9 +2,6 @@ Tools
 ======
 String
 ------
-*强调*<br>
-_强调_<br>
-**强调**<br>
-__强调__<br>
-***强调***<br>
-___强调___<br>
+#Start
+Include the head file
+$<# include "String.h">
