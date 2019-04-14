@@ -108,7 +108,7 @@ bool String::operator==(const char* str)
 
 
 
-	if (length == strlen(str) + 1)
+	if (length == strlen(str))
 	{
 		int isSame = strcmp(string,str);
 		if (!isSame)
