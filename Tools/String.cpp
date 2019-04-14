@@ -66,6 +66,7 @@ void String::operator=(const char* str)
 {
 	if (str == NULL)
 	{
+		delete[] string;
 		length = 0;
 		this->string = new char[length+1];
 		strcpy_s(this->string,length+1,"");
