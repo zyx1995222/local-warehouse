@@ -97,3 +97,79 @@ void main()
 	system("pause");
 }
 ```
+
+Condition judge.
+
+```
+# include "iostream"
+# include "String.h"
+using namespace std;
+
+void main()
+{
+	String s = "ABC";
+	if (s == "ABC")
+	{
+		cout<<"Yes"<<endl;
+	}
+	
+	if(s != "ABc")
+	{
+		cout<<"Yes"<<endl;
+	}
+
+	
+
+	system("pause");
+}
+```
+
+```
+# include "iostream"
+# include "String.h"
+using namespace std;
+
+void main()
+{
+	String s = "ABC";
+	String s1 = "ABC";
+	String s2 = "ABc";
+
+	if (s == s1)
+	{
+		cout<<"Yes"<<endl;
+	}
+
+	if (s != s2)
+	{
+		cout<<"Yes"<<endl;
+	}
+
+	system("pause");
+}
+```
+
+Judge if the String variable is equal NULL.
+
+```
+# include "iostream"
+# include "String.h"
+using namespace std;
+
+void main()
+{
+	String s(10);
+	s = NULL;
+
+	if (s == NULL)
+	{
+		cout<<"Yes"<<endl;
+	}
+
+	if (s != NULL)
+	{
+		cout<<"Yes"<<endl;
+	}
+	system("pause");
+}
+```
