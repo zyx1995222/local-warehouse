@@ -51,6 +51,7 @@ void main()
 	String s1 = "Hi";
 	String s2 = s;
 	s = s1;
+	s1 = "Hello"
 	cout<<s<<endl;
 	cout<<s1<<endl;
 	cout<<s2<<endl;
@@ -63,3 +64,36 @@ You can let the value equal NULL.
 String s = NULL;
 `
 
+You can create String class with char array length.
+
+```
+# include "iostream"
+# include "String.h"
+using namespace std;
+
+void main()
+{
+	String s(100);
+	s = "hello hello";
+	cout<<s<<endl;
+	system("pause");
+}
+```
+
+Input a string to assign for a String variabel by using "cin".
+
+*note:The string  you input length can not beyond the length of String variable.*
+
+```
+# include "iostream"
+# include "String.h"
+using namespace std;
+
+void main()
+{
+	String s(200);
+	cin>>s;
+	cout<<s<<endl;
+	system("pause");
+}
+```
