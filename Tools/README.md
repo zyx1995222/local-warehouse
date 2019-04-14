@@ -82,7 +82,7 @@ void main()
 
 Input a string to assign for a String variabel by using "cin".
 
-*note:The string  you input length can not beyond the length of String variable.*
+*Note:The string  you input length can not beyond the length of String variable.*
 
 ```
 # include "iostream"
