@@ -1,0 +1,19 @@
+﻿生成启动时间为 2019/5/22 星期三 下午 19:46:13。
+     1>项目“E:\CProject\snake_V2\snake_V1\snake_V1.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\VC2012_Directory\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp Snake.cpp Utils.cpp
+         main.cpp
+         Snake.cpp
+         Utils.cpp
+     1>Utils.cpp(75): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>Utils.cpp(112): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+       Link:
+         E:\VC2012_Directory\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\CProject\snake_V2\Release\snake_V1.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\CProject\snake_V2\Release\snake_V1.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\CProject\snake_V2\Release\snake_V1.lib" /MACHINE:X86 /SAFESEH Release\main.obj
+         Release\Snake.obj
+         Release\Utils.obj
+     1>EasyXw.lib(EasyX.obj) : fatal error LNK1112: 模块计算机类型“x64”与目标计算机类型“X86”冲突
+     1>已完成生成项目“E:\CProject\snake_V2\snake_V1\snake_V1.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:02.79
