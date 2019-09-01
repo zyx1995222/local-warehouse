@@ -67,7 +67,10 @@ ConsoleTools::~ConsoleTools()
 }
 
 
-
+/*
+value1~4:Output region on console.
+value5:Output single string quantity.
+*/
 void ConsoleTools::producePosList(
 								const int produceQuantity,
 								unsigned X,
@@ -236,10 +239,7 @@ char * ConsoleTools::getSingleChar()
 }
 
 
-/*
-value1~4:Output region on console.
-value5:Output single string quantity.
-*/
+
 void ConsoleTools::mutipleStrFlicker()
 {
 	
